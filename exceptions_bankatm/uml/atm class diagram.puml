@@ -1,0 +1,68 @@
+@startuml
+title Matrix Bank ATM - Geld opnemen Use Case
+
+class ATM {
+  - atmId: String
+  - cashAvailable: double
+  - transactionLog: List<String>
+  + insertCard(card: Card): boolean
+  + validatePin(pin: String): boolean
+  + checkCashAvailability(amount: double): boolean
+  + dispenseCash(amount: double): void
+  + printReceipt(transaction: Transaction): void
+  + logTransaction(message: String): void
+  + ejectCard(): void
+}
+
+class Card {
+  - cardNumber: String
+  - isValid: boolean
+  - attempts: int
+  + validate(): boolean
+  + incrementAttempts(): void
+  + resetAttempts(): void
+}
+
+class BankCustomer {
+  - name: String
+  - accounts: List<Account>
+  - card: Card
+  + getAccount(type: String): Account
+  + getCard(): Card
+}
+
+class Account {
+  - accountNumber: String
+  - balance: double
+  - dailyLimit: double
+  + debit(amount: double): boolean
+  + hasSufficientFunds(amount: double): boolean
+  + withinDailyLimit(amount: double): boolean
+}
+
+class Transaction {
+  - transactionId: String
+  - account: Account
+  - amount: double
+  - status: String
+  - timestamp: Date
+  + process(): boolean
+  + generateReceipt(): String
+}
+
+class BankSystem {
+  + verifyTransaction(transaction: Transaction): boolean
+  + logEvent(message: String): void
+}
+
+ATM --> Card : uses
+ATM --> BankCustomer : interacts with
+BankCustomer --> Card : owns
+BankCustomer --> Account : accesses
+ATM --> Account : debits
+ATM --> Transaction : creates
+Transaction --> Account : references
+ATM --> BankSystem : verifies
+BankSystem --> Transaction : processes
+
+@enduml
