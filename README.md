@@ -1,6 +1,6 @@
 # Portfolio Java Advanced
 
-*Collection Java projects demonstrating advanced programmming and console applications. 
+*Collection Java projects demonstrating advanced programming and console applications. 
 Each project showcases clean code, logic and practical problem-solving skills.*
 ---
 
@@ -36,7 +36,6 @@ Each project showcases clean code, logic and practical problem-solving skills.*
    java -cp out org.evavdb1.pandemicsimulator.MainSorter
    java -cp out org.evavdb1.postcards.CardMainApp
    java -cp out org.evavdb1.productionfactory.ProductMainApp
-   java -cp out org.evavdb1.bankatm.ATMMain
    java -cp out org.evavdb1.lifesupport.PersonMain
    java -cp out org.evavdb1.bookproject.BookApp
    java -cp out org.evavdb1.studentproject.ScoreInfoApp
@@ -68,22 +67,6 @@ portfolio-java-advanced-console/
 │               ├── Product.java
 │               ├── ProductFactory.java
 │               └── ProductSorter.java
-│
-├── exceptions_bankatm/
-│       └── src/org.evavdb1.bankatm/
-│               ├── ATMMain.java
-│               ├── Account.java
-│               ├── ATM.java
-│               ├── BankCustomer.java
-│               ├── BankSystem.java
-│               ├── Card.java
-│               ├── Transaction.java
-│               ├── CashUnavailableException.java 
-│               ├── DailyLimitExceededException.java
-│               ├── InsufficientFundsException.java
-│               ├── InvalidCardException.java
-│               ├── InvalidPinException.java
-│               └── PinAttemptExceededException.java
 │
 ├── multithreading_lifesupport/
 │       └── src/org.evavdb1.lifesupport/
