@@ -27,11 +27,11 @@ Each project showcases clean code, logic and practical problem-solving skills.*
 
 ## How to Run
 1. Clone the repository
-2. Compile the program
+2. Compile all source files
    ```
-   javac -d out <src/**/*.java>
+   javac -d out src/**/*.java
    ```
-3. Run the program
+3. Run one of the applications
    ```
    java -cp out org.evavdb1.pandemicsimulator.MainSorter
    java -cp out org.evavdb1.postcards.CardMainApp
@@ -40,6 +40,8 @@ Each project showcases clean code, logic and practical problem-solving skills.*
    java -cp out org.evavdb1.bookproject.BookApp
    java -cp out org.evavdb1.studentproject.ScoreInfoApp
    ```
+   Note: On Windows (cmd), the ** glob may not expand. Use PowerShell or Git Bash.
+
 ---
 ```
 portfolio-java-advanced-console/
