@@ -46,7 +46,7 @@ Each project showcases clean code, logic and practical problem-solving skills.*
 ```
 portfolio-java-advanced-console/
 │
-├── collections_pandemic/
+├── Collections Pandemic/
 │       └── src/org.evavdb1.pandemicsimulator/
 │               ├── MainSorter.java
 │               ├── InsuranceSorter.java
@@ -54,13 +54,13 @@ portfolio-java-advanced-console/
 │               ├── AgeSorter.java
 │               └── TemperatureSorter.java
 │
-├── collections_postcards/
+├── Collections PostCards/
 │       └── src/org.evavdb1.postcards/
 │               ├── CardMainApp.java
 │               ├── Friend.java
 │               └── PostCard.java
 │
-├── collections_productionfactory/
+├── Collections ProductionFactory/
 │       └── src/org.evavdb1.productionfactory
 │               ├── ProductMainApp.java
 │               ├── ElectricProduct.java
@@ -70,20 +70,20 @@ portfolio-java-advanced-console/
 │               ├── ProductFactory.java
 │               └── ProductSorter.java
 │
-├── multithreading_lifesupport/
+├── Multithreading LifeSupport/
 │       └── src/org.evavdb1.lifesupport/
 │               ├── PersonMain.java
 │               ├── HeartBeat.java
 │               ├── Lungs.java
 │               └── Person.java
 │
-├── streams_bookproject/
+├── Streams BookProject/
 │       └── src/org.evavdb1.bookproject/
 │               ├── BookApp.java
 │               ├── Book.java
 │               └── Person.java
 │
-├── streams_studentproject/
+├── Streams StudentProject/
 │       └── src/org.evavdb1.studentproject/
 │               ├── ScoreInfoApp.java
 │               ├── Person.java
