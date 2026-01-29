@@ -44,7 +44,7 @@ Each project showcases clean code, logic and practical problem-solving skills.*
 
 ---
 ```
-portfolio-java-advanced-console/
+portfolio-java-advanced/
 │
 ├── Collections Pandemic/
 │       └── src/org/evavdb1/pandemicsimulator/
